@@ -17,7 +17,7 @@ An example of usage is given in example.py.
 
 # Setup Toturial
 
-This repo is forked from https://github.com/haehn/TrakoDracoPy and we use the *generic_point_cloud* branch.
+This repo is forked from https://github.com/haehn/TrakoDracoPy and we use the *master* branch.
 
 To setup the package by yourself (I did these steps to setup):
 
