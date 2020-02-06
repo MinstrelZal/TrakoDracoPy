@@ -31,7 +31,7 @@ if sys.platform == 'darwin':
     cmake_args = ['-DCMAKE_OSX_DEPLOYMENT_TARGET:STRING='+plat_name[sep[0]+1:sep[1]],'-DCMAKE_OSX_ARCHITECTURES:STRING='+plat_name[sep[1]+1:]]
     library_link_args = ['-l{0}'.format(lib) for lib in ('dracoenc', 'draco', 'dracodec')]
 else:
-    library_link_args = ['-l:{0}'.format(lib) for lib in ('libdracoenc.a', 'libdraco.a', 'libdracodec.a')]
+    library_link_args = ['-l:{0}'.format(lib) for lib in ('libdracoenc.so', 'libdraco.so', 'libdracodec.so', 'libdracoenc.so.1', 'libdraco.so.1', 'libdracodec.so.1')]
 extra_link_args = ['-L{0}'.format(lib_dir)] + library_link_args
 
 setup(
